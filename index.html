@@ -1,0 +1,55 @@
+ <html>
+  <head>
+    <title>Image recognition class 103</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
+    <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+    <script src="main.js"></script>
+
+   <link rel="stylesheet" href="style.css">
+  
+  </head>
+
+  <body>
+  <div class="container">
+    
+    <center>
+      <h1 class="heading"><span id="red">Snap</span><span id="highlight">Rec</span></h1>
+      <br><br>
+      <p style="font-size: 22px;" id="highlight">Model is trained to identify the following objects: </p>
+
+      <span class="name_of_objects">
+        <br>
+        Highlighter, 
+        Marker,
+        Water Cup,
+        Geometry Box, 
+        <br><br>
+      </span>
+      <label>Your <span id="highlight">Webcam</span></label>
+      <div id="camera"></div>
+      <br><br><br>
+      <div id="result"></div>
+      <br><br>
+      <button onclick="take_snap()" class="snape">Snap Image</button>
+      <br><br>
+      <button onclick="recognition()" class="rec">Recognize Image</button>
+      <br><br>
+      <div id="results">
+        <h5>Recognized <span id="highlight">Object</span>: <span id="result_object_name"></span></h5>
+        <h5 id="highlight">Accuracy: <span id="result_accuracy"></span></h5>
+      </div>
+      <br><br>
+    </center>
+
+  </div>
+
+
+  </body>
+</html>
+
+ 
